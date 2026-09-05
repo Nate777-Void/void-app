@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOID // SECURE_NODE</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://tailwindcss.com"></script>
+  <!-- Google Fonts for Brutalist Mono Aesthetic -->
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Share Tech Mono', monospace;
+      background-color: #000000;
+    }
+    /* Custom scanline overlay for glitch aesthetic */
+    .scanlines {
+      background: linear-gradient(
+        rgba(18, 16, 16, 0) 50%, 
+        rgba(0, 0, 0, 0.25) 50%
+      ), linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 0.06),
+        rgba(0, 255, 0, 0.02),
+        rgba(0, 0, 255, 0.06)
+      );
+      background-size: 100% 4px, 6px 100%;
+    }
+  </style>
+</head>
+<body class="text-[#00FF66] min-h-screen flex justify-center items-center p-0 sm:p-4 scanlines">
+
+  <!-- Smartphone Viewport Container -->
+  <div class="w-full max-w-md h-screen sm:h-[850px] bg-black border-0 sm:border-2 border-[#00E5FF]/30 flex flex-col relative overflow-hidden shadow-[0_0_30px_rgba(0,229,255,0.1)]">
+    
+    <!-- Top System Telemetry Bar -->
+    <header class="bg-black border-b border-[#00E5FF]/20 px-4 py-3 flex justify-between items-center z-10">
+      <div>
+        <h1 class="text-white text-lg font-bold tracking-widest flex items-center gap-2">
+          VOID <span class="text-xs text-[#00E5FF] border border-[#00E5FF]/40 px-1 py-0.5 animate-pulse">PROXY_ON</span>
+        </h1>
+        <p class="text-[10px] text-[#00FF66]/70 tracking-tight">RELAY ACTIVE // 19:43:01 UTC</p>
+      </div>
+      <div class="text-right text-xs">
+        <span class="text-[#00E5FF]">MESH_NET:</span> <span class="text-white">ACTIVE</span>
+      </div>
+    </header>
+
+    <!-- Ephemeral Stories Tray (Glowing Glitch Rings) -->
+    <div class="bg-black border-b border-[#00E5FF]/10 py-3 px-2 flex gap-4 overflow-x-auto scrollbar-none z-10">
+      <!-- Story Item (User) -->
+      <div class="flex flex-col items-center flex-shrink-0 cursor-pointer group">
+        <div class="w-14 h-14 rounded-full p-[2px] bg-gradient-to-tr from-[#00FF66] to-[#00E5FF] animate-spin-slow shadow-[0_0_10px_rgba(0,255,102,0.3)]">
+          <div class="w-full h-full rounded-full bg-black flex items-center justify-center text-xs text-white group-hover:scale-95 transition-transform">
+            ⚡
+          </div>
+        </div>
+        <span class="text-[10px] text-white/80 mt-1">YOUR_NODE</span>
+      </div>
+      <!-- Story Item 2 -->
+      <div class="flex flex-col items-center flex-shrink-0 cursor-pointer group">
+        <div class="w-14 h-14 rounded-full p-[2px] border border-dashed border-[#00E5FF]/60">
+          <div class="w-full h-full rounded-full bg-neutral-900 flex items-center justify-center text-xs text-[#00E5FF]">
+            Ø
+          </div>
+        </div>
+        <span class="text-[10px] text-[#00E5FF] mt-1">anon_882</span>
+      </div>
+      <!-- Story Item 3 -->
+      <div class="flex flex-col items-center flex-shrink-0 cursor-pointer group">
+        <div class="w-14 h-14 rounded-full p-[2px] border border-double border-red-500/60">
+          <div class="w-full h-full rounded-full bg-neutral-900 flex items-center justify-center text-xs text-red-400">
+            ⚠
+          </div>
+        </div>
+        <span class="text-[10px] text-red-400 mt-1">burn_x</span>
+      </div>
+    </div>
+
+    <!-- Main Vertical Timeline Feed -->
+    <main class="flex-1 overflow-y-auto p-4 space-y-6 pb-24 scrollbar-none">
+      
+      <!-- Post Card 1 -->
+      <article class="border border-[#00E5FF]/20 bg-black/40 backdrop-blur-sm rounded-none overflow-hidden">
+        <!-- Post Header -->
+        <div class="p-3 border-b border-[#00E5FF]/10 flex justify-between items-center text-xs">
+          <div class="flex items-center gap-2">
+            <div class="w-6 h-6 bg-[#00FF66]/20 border border-[#00FF66] flex items-center justify-center text-[10px] font-bold text-[#00FF66]">
+              A1
+            </div>
+            <div>
+              <span class="text-white block font-bold">anonym_90f23</span>
+              <span class="text-[9px] text-neutral-500 block">LOC: OBFUSCATED</span>
+            </div>
+          </div>
+          <div class="text-right">
+            <span class="text-red-400 text-[10px] block font-mono">T-MINUS: 03H 45M</span>
+          </div>
+        </div>
+
+        <!-- 1:1 Image Container with Glitch Overlays -->
+        <div class="relative w-full aspect-square bg-neutral-900 overflow-hidden group cursor-pointer">
+          <!-- Placeholder Mock Image Background (Simulating Glitch/Brutalist Art) -->
+          <div class="absolute inset-0 bg-cover bg-center mix-blend-luminosity filter contrast-125 brightness-75 transition-all group-hover:scale-105" style="background-image: url('https://unsplash.com');"></div>
+          
+          <!-- Chromatic Aberration Simulation Overlays -->
+          <div class="absolute inset-0 bg-cyan-500/10 mix-blend-screen opacity-40 animate-pulse"></div>
+          <div class="absolute inset-0 bg-red-500/10 mix-blend-screen opacity-30 animate-pulse" style="animation-delay: 1s;"></div>
+          
+          <!-- Static Grain Mask -->
+          <div class="absolute inset-0 opacity-15 pointer-events-none bg-[url('https://giphy.com')] bg-cover"></div>
+
+          <!-- Double Tap Gesture Overlay Notification (Hidden by default, flex on activation) -->
+          <div class="absolute inset-0 bg-black/60 hidden items-center justify-center flex-col gap-2 transition-all">
+            <span class="text-4xl text-[#00FF66] drop-shadow-[0_0_15px_rgba(0,255,102,0.6)]">💚</span>
+            <span class="text-xs text-white tracking-widest font-mono">[RESONANCE RECEIVED]</span>
+          </div>
+        </div>
+
+        <!-- Post Engagement / Metrics Interface -->
+        <div class="p-3 border-t border-[#00E5FF]/10 bg-black">
+          <div class="flex justify-between items-center mb-3">
+            <div class="flex gap-4 text-xs">
+              <button class="hover:text-white transition-colors flex items-center gap-1 group">
+                <span class="text-[#00FF66] group-hover:scale-110 transition-transform">💚</span> RESONATE
+              </button>
+              <button class="hover:text-white transition-colors flex items-center gap-1">
+                <span class="text-[#00E5FF]">💬</span> COMMENT
+              </button>
+            </div>
+            <button class="text-[10px] border border-[#00E5FF]/30 px-2 py-0.5 hover:bg-[#00E5FF]/10 text-[#00E5FF]">
+              ⚡ PEER-SHARE
+            </button>
+          </div>
+          
+          <!-- Post Captions & Terminal Logging -->
+          <div class="space-y-1 text-xs text-neutral-300">
+            <p><span class="text-[#00FF66] font-bold mr-1">anonym_90f23:</span> // Algorithm failure is imminent. Capture the noise. Distort the feedback loop. 19.42 //</p>
+            <div class="text-[10px] text-neutral-500 pt-1">
+              <span>View all 8 decentralized comments</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Post Card 2 (Text-centric Unfiltered Feed Card) -->
+      <article class="border border-red-500/20 bg-black/40 backdrop-blur-sm rounded-none overflow-hidden">
+        <div class="p-3 border-b border-red-500/10 flex justify-between items-center text-xs">
+          <div class="flex items-center gap-2">
+            <div class="w-6 h-6 bg-red-500/20 border border-red-500 flex items-center justify-center text-[10px] font-bold text-red-500">
+              X2
+            </div>
+            <div>
+              <span class="text-white block font-bold">cipher_ghost</span>
+              <span class="text-[9px] text-red-400 block">NODE_BURN_CRITICAL</span>
+            </div>
+          </div>
+          <span class="text-red-500 font-bold text-[10px] animate-pulse">EXPIRING NOW</span>
+        </div>
+        <div class="p-6 bg-neutral-950/80 font-mono text-xs text-red-400 border-b border-red-500/10 min-h-[100px] flex items-center">
+          "System infrastructure data packet drop scheduled for midnight. Ensure your local mesh parameters match the localized relay."
+        </div>
+        <div class="p-3 bg-black flex justify-between items-center text-xs">
+          <span class="text-neutral-500 text-[10px]">0 RESONANCES</span>
+          <span class="text-red-400 bg-red-950/50 px-2 py-0.5 border border-red-900 text-[10px]">[ENCRYPTED THREAD]</span>
+        </div>
+      </article>
+
+    </main>
+
+    <!-- Bottom Navigation Dock (Fixed Instagram Anchors) -->
+    <nav class="absolute bottom-0 left-0 right-0 bg-black border-t border-[#00E5FF]/20 px-4 py-3 flex justify-between items-center z-20">
+      <!-- Home Option -->
+      <button class="flex flex-col items-center justify-center text-[#00FF66] hover:text-white transition-colors">
+        <span class="text-lg">⌂</span>
+        <span class="text-[8px] uppercase tracking-tighter">HOME</span>
+      </button>
+      
+      <!-- Global Search -->
+      <button class="flex flex-col items-center justify-center text-[#00E5FF]/70 hover:text-[#00E5FF] transition-colors">
+        <span class="text-lg">⌕</span>
+        <span class="text-[8px] uppercase tracking-tighter">SEARCH</span>
+      </button>
+      
+      <!-- Media Generation (Custom Button) -->
+      <button class="relative -top-2 bg-gradient-to-b from-black to-neutral-900 border border-[#00FF66] w-10 h-10 flex items-center justify-center shadow-[0_0_10px_rgba(0,255,102,0.2)] hover:shadow-[0_0_15px_rgba(0,255,102,0.5)] transition-all">
+        <span class="text-xl text-white font-bold leading-none">+</span>
